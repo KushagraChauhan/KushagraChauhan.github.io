@@ -1,6 +1,7 @@
 This is a personal website, which gives an intro about me, showcases my work and how to contact me.
 
 Credits:
+	
 	Template:
 		html5up.net | @ajlkn
 
