@@ -1,22 +1,28 @@
 <?php
-  $name = $_Post['name'];
-  $visitor_email = $_Post['email'];
-  $message = $_Post['message'];
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$message = $_POST['message'];
 
-  $email_from = 'kushagra_sc@yahoo.in'
-  $email_subject = "New form submission"
 
-  $email_body = "User Name: $name.\n".
-                    "User  Email: $visitor_email.\n".
-                        "User Message: $message.\n";
+$email_from = 'kushagra_sc@yahoo.in';
 
-  $to = "kushagra_sc@yahoo.in";
+$email_subject = "New Form Submission";
 
-  $headers = "From: $email_from \r\n";
+$email_body = "User Name: $name.\n".
+"User Email: $visitor_email.\n".
+"User Message: $message.\n";
 
-  $headers .= "Reply-To: $visitor_email \r\n";
 
-  mail($to, $email_subject, $email_body, $headers);
+$to = "kushagra_sc@yahoo.in";
 
-  header("Location: index.html");
+$headers = "From: $email_from \r\n";
+
+$headers .= "Reply To: $visitor_email \r\n";
+
+mail($to,email_subject,$email_body,$headers);
+
+header("Location:index.html");
+
+
+
 ?>
