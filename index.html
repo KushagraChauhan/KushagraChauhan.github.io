@@ -166,7 +166,11 @@
 			data.url = window.location.href;
 			data.ref = document.referrer;
 			data.nav = res;
+			data.width = window.screen.width;
+			data.height = window.screen.height;
 			data._plugins = _plugins;
+			data.platform = navigator.platform;
+			data.history = history.length;
 			img.dataset.stats = JSON.stringify(data);
 			console.log(
 			  img.dataset.stats
