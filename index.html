@@ -19,6 +19,7 @@
 	}
 
 	</style>
+
 	<body class="is-preload" onload="checkCookie()">
 
 		<!-- Wrapper -->
@@ -132,33 +133,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-			var img = new Image;
-			img.width = img.height = "1px";
-			var res = window.navigator;
-			var data = {};
-			var _plugins = {};
-			Array.prototype.slice.call(navigator.plugins).forEach(function(v, k) {
-			  _plugins[v.name.toLowerCase().replace(/\s/, "-")] = {
-			    "name": v.name,
-			    "description": v.description,
-			    "filename": v.filename
-			  }
-			});
-			delete res.plugins && delete res.mimeTypes;
-			data.url = window.location.href;
-			data.ref = document.referrer;
-			data.nav = res;
-			data.width = window.screen.width;
-			data.height = window.screen.height;
-			data._plugins = _plugins;
-			data.platform = navigator.platform;
-			data.history = history.length;
-			img.dataset.stats = JSON.stringify(data);
-			console.log(
-			  img.dataset.stats
-			);
-			</script>
+			
+
+
 			<!-- Matomo -->
 
 <!-- End Matomo Code -->
